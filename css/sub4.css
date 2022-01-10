@@ -1,0 +1,303 @@
+@charset "utf-8";
+
+@font-face {
+    font-family: 'Floane', 'MalgunGothic';
+    src: url('../font/Floane-Bold.woff') format('woff'),
+    url('../font/MalgunGothic-_1_.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+   
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+ul{
+    list-style: none;
+}
+body{
+    font-family: "MalgunGothic";
+    font-size: 16px;
+    line-height: 24px;
+    color: #433a34;
+    min-width: 1350px;
+}
+
+/*header*/
+.nav ul li a{display:block;
+	text-align:center;
+    padding: 48px 79px;}
+
+
+.header_inner{
+    width: 1320px;
+    margin: 0 auto;
+    height: 120px;
+}
+.logo{
+    float: left;
+    padding-top: 37.5px;
+}
+.nav ul li{
+    float: left;
+    font-size: 20px;
+    color: white;
+    
+}
+
+/*호버시 효과*/
+.nav ul li:hover{
+    color: #9c8d83;
+    transition: all 0.5s;
+}
+
+.logo1{
+    position: relative;
+    width: 206px;
+    height: 45px;
+}
+.logo2{
+    position: absolute;
+    top: 37.5px;
+    left: 292px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.logo:hover .logo2{
+    opacity: 1;
+}
+.login_icon{
+    position: relative;
+    width: 25px;
+    height: 25px;
+}
+.login_icon2{
+    position: absolute;
+    top: 47.5px;
+    right: 339px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.nav_icon1:hover .login_icon2{
+    opacity: 1;
+}
+.cart_icon{
+    position: relative;
+    width: 25px;
+    height: 25px;
+}
+.cart_icon2{
+    position: absolute;
+    top: 47.5px;
+    right: 291px;
+    opacity: 0;
+    transition: all 0.5s;
+}
+.nav_icon2:hover .cart_icon2{
+    opacity: 1;
+}
+
+/*효과주기*/
+#header{position:fixed;
+    z-index: 9999;
+	top:0;
+	left:0;
+	width:100%;
+	height:120px;}	
+
+    /**/
+
+.nav ul{
+    float: left;
+}
+.menu ul li{
+    float: left;
+    color: white;
+}
+.menu ul li:nth-child(2){
+    padding-left: 23px;
+}
+.menu ul{
+    float: right;
+    padding-top: 47.5px;
+}
+#main_banner{
+    width: 100%;
+    height: 636px;
+    background: url(../images/sub4_main.png)no-repeat center top;
+    text-align: center;
+}
+
+#main_banner h1{
+    padding: 292px;
+    font-size: 54.17px;
+    letter-spacing: 13px;
+    color: #edeae4;
+    font-weight: normal;
+}
+
+.on{
+    background-color: #fff;
+}
+
+.on .nav ul li  a{
+    color:#514940;
+}
+.on .nav ul li  a:hover{
+    color:#9c8d83;
+    transition: all 0.5s;
+}
+
+/*배너*/
+.swiper{
+    margin: 0 auto;
+    width: 1320px;
+}
+#arrow_img{width:100%; margin:0 auto;
+    background: url(..//images/sub4_paper_bg.png) no-repeat center top;
+    height: 733px;
+    overflow: hidden;/*창크기 줄였을때 화살표가 줄어들지 않게?*/
+    padding-top: 159px;
+}
+
+
+    .swiper_slide{
+        width: 1068px;
+        height: 390px;
+    }
+
+
+
+/*화살표 밖으로 + 이미지로 화살표 변환*/
+
+.position{width: 1356px; margin: 0 auto; position: relative;}/*화살표의 기준이 되는 박스*/
+.card_img{width:1068px; margin:0 auto;}/*마진오토 기준등은 원하는 크기에 따라 달라집니다!*/
+.card_img_next{right:0;}
+.card_img_prev{left:0;}
+/*화살표를 이미지로 변경*/
+.card_img_next:after{content:url(../images/page_right.png);}
+.card_img_prev:after{content:url(../images/page_left.png);}
+.card_img_next, .card_img_prev{width:30px; height:63px;/*화살표 이미지크기와 동일하게 설정*/}
+
+
+/*qna*/
+#qna{
+    width: 100%;
+    background: url(../images/sub4_paper_bg2.png) no-repeat center top;
+    height: 1430px;
+}
+.qna_inner{
+    margin: 0 auto;
+    width: 1320px;
+    height: 942px;
+}
+#qna h1{
+    font-size: 38px;
+    color: #846854;
+    padding-top: 78px;
+    padding-bottom: 69px;
+    text-align: center;
+    font-family: "Floane";
+    letter-spacing: 4px;
+}
+table{
+    width: 1097px;
+    border-collapse: collapse;
+    margin-left: 111.5px;
+}
+th, td{
+    color: #846854;
+    font-size: 14px;
+    letter-spacing: 1px;
+    border-bottom: 1px solid #cccccc;
+    border-left: 1px solid #cccccc;
+    padding: 10px;
+}
+.none{
+    border-left: none;
+}
+.solid th, .solid td{
+    border-bottom: 2px solid #cccccc;
+}
+.text_left{
+    text-align: left;
+}
+
+/*아이콘넣기*/
+
+.icon{
+    background: url(../images/lock_icon.png) no-repeat 14% 55%, url(../images/new.gif) no-repeat 16% 57%;
+}
+.icon2{
+    background: url(../images/lock_icon.png) no-repeat 22% 55%, url(../images/new.gif) no-repeat 24% 57%;
+}
+.bar{
+    padding-left: 33px;
+    background: url(../images/ripple.png) no-repeat 3% 44%, url(../images/lock_icon.png) no-repeat 18% 55%, url(../images/new.gif) no-repeat 20% 57%;
+}
+.bar2{
+    padding-left: 33px;
+    background: url(../images/ripple.png) no-repeat 3% 44%, url(../images/lock_icon.png) no-repeat 26% 55%, url(../images/new.gif) no-repeat 28% 57%;
+
+}
+#move ul li{
+    float: left;
+}
+#move{
+    margin: 0 auto;
+    width: 1320px;
+}
+.move_inner .page{
+    font-size: 16px;
+    padding-right: 30px;
+    color: #dad4cd;
+}
+.move_inner .page3{
+    padding-right: 20px !important;
+}
+.btn1, .btn2{
+    color: #a89a90;
+    font-weight: bold;
+    font-size: 14px;
+}
+.move_inner .btn1{
+    padding-left: 567px;
+    padding-right: 20px;
+}
+
+.click a, .click2 .page{
+    color:#9b8a7e;
+    font-weight:bold;
+}
+
+
+/*footer*/
+#footer{
+    height: 182px;
+     background-color: #7a7468;
+     }
+.footer_inner{
+     margin: 0 auto;
+     width: 1320px;
+     text-align: center;
+    }
+#footer p{
+    font-size: 11px;
+    color: #d4d2cf;
+    padding-top: 43px;
+    padding-bottom: 22px;
+    }
+
+    /*top버튼*/
+.fixed_box{
+    width:51px;
+    position:fixed;
+    right:50px;
+    bottom:20px;
+}
+
+
