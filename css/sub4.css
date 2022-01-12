@@ -59,6 +59,7 @@ body{
 .logo1{
     width: 206px;
     height: 45px;
+    transition: all 0.5s;
 }
 .logo2{
     position: absolute;
@@ -70,9 +71,13 @@ body{
 .logo:hover .logo2{
     opacity: 1;
 }
+.logo:hover .logo1{
+    opacity: 0;
+}
 .login_icon{
     width: 25px;
     height: 25px;
+    transition: all 0.5s;
 }
 .login_icon2{
     position: absolute;
@@ -84,9 +89,13 @@ body{
 .nav_icon1:hover .login_icon2{
     opacity: 1;
 }
+.nav_icon1:hover .login_icon{
+    opacity: 0;
+}
 .cart_icon{
     width: 25px;
     height: 25px;
+    transition: all 0.5s;
 }
 .cart_icon2{
     position: absolute;
@@ -97,6 +106,9 @@ body{
 }
 .nav_icon2:hover .cart_icon2{
     opacity: 1;
+}
+.nav_icon2:hover .cart_icon{
+    opacity: 0;
 }
 
 /*효과주기*/
@@ -296,6 +308,7 @@ th, td{
     position:fixed;
     right:50px;
     bottom:20px;
+    z-index: 999999;
 }
 
 
