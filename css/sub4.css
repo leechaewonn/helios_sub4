@@ -37,6 +37,7 @@ body{
     width: 1320px;
     margin: 0 auto;
     height: 120px;
+    position: relative;
 }
 .logo{
     float: left;
@@ -56,14 +57,13 @@ body{
 }
 
 .logo1{
-    position: relative;
     width: 206px;
     height: 45px;
 }
 .logo2{
     position: absolute;
     top: 37.5px;
-    left: 292px;
+    left: 0;
     opacity: 0;
     transition: all 0.5s;
 }
@@ -71,14 +71,13 @@ body{
     opacity: 1;
 }
 .login_icon{
-    position: relative;
     width: 25px;
     height: 25px;
 }
 .login_icon2{
     position: absolute;
     top: 47.5px;
-    right: 339px;
+    right: 48px;
     opacity: 0;
     transition: all 0.5s;
 }
@@ -86,14 +85,13 @@ body{
     opacity: 1;
 }
 .cart_icon{
-    position: relative;
     width: 25px;
     height: 25px;
 }
 .cart_icon2{
     position: absolute;
     top: 47.5px;
-    right: 291px;
+    right: 0;
     opacity: 0;
     transition: all 0.5s;
 }
